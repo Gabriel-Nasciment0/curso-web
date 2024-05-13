@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1><?php
-       echo"Ola mundo";
+    <?php
+    //string
+    $nome = 'Gabriel';
+    //numero    
+    $idade = 22;
+
+    echo 'Meu nome e ', $nome, ' tenho ', $idade, " de idade";
     ?>
-    </h1>
 </body>
-</html>
+
+</html
