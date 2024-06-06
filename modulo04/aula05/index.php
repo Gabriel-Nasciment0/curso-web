@@ -9,14 +9,19 @@
 <?php
 $pdo = new PDO('mysql:host=localhost;dbname=modulo04', 'root', '');
 
-$sql = $pdo->prepare("SELECT = FROM posts");
+$sql = $pdo->prepare("SELECT * FROM posts WHERE categoria_id = ?");
 
-$sql->execute();
+$sql->execute(array($_GET['categoria_id']));
 $info = $sql->fetchAll();
-echo '<pre>';
-print_r();
-
-echo '</pre>';
+// echo '<pre>';
+// print_r($info);
+// echo '</pre>';
+foreach ($info as $key => $value) {
+    echo 'Titulo:', $value['titulo'];
+    echo '<br/>';
+    echo 'noticias:', $value['conteudo'];
+    echo '<hr>';
+}
 ?>
 
 <body>
