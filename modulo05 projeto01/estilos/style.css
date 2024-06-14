@@ -9,6 +9,10 @@ svg {
     height: 30px;
 }
 /* boot css */
+img {
+    width: 100%;
+    max-width: 400px;
+}
 .center {
     max-width: 1280px;
     padding: 0 2%;
@@ -18,6 +22,7 @@ svg {
     width: 33.3%;
 }
 .w50 {
+    padding: 0 10px;
     width: 50%;
 }
 .left {
@@ -74,10 +79,127 @@ header {
     background: rgba(51, 51, 51, 0.5);
 }
 .banner_principal form {
-    max-width: 500px;
-    z-index: 2;
+    width: 93%;
+    max-width: 600px;
+    z-index: 9;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+.banner_principal form h2 {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+.banner_principal form input[type="email"] {
+    width: 100%;
+    height: 66px;
+    background: white;
+    color: #333;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.banner_principal form input[type="submit"] {
+    width: 100%;
+    height: 66px;
+    background: #00c59e;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    border: 0;
+    padding-left: 10px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.descricao_autor {
+    padding: 40px 0;
+}
+.descricao_autor h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #444;
+}
+.descricao_autor p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+}
+.especialidades {
+    padding: 40px 0;
+    background: #e2e2e2;
+    text-align: center;
+}
+.especialidades .title {
+    font-size: 30px;
+    font-weight: 400;
+    color: #999;
+}
+.box_especialidade {
+    margin: 40px 0;
+    padding: 0 30px;
+}
+.box_especialidade h3 {
+    font-weight: 300;
+    font-size: 25px;
+    color: #bababa;
+}
+.box_especialidade p {
+    color: #444;
+    font-size: 15px;
+    margin-top: 10px;
+}
+@media screen and (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mobile ul {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        left: 0;
+        width: 100%;
+        top: 55px;
+        text-align: center;
+    }
+    .mobile li {
+        display: block;
+        font-weight: 300;
+        width: 100%;
+        background: white;
+        border-bottom: 1px solid #ccc;
+        font-size: 17px;
+        padding: 8px 0;
+    }
+    .mobile a {
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+    .botao_menu_mobile {
+        /* esta em svg entao e inutil */
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+}
+@media screen and (max-width: 850px) {
+    img {
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+    }
+    .w33 {
+        width: 100%;
+        padding: 20px;
+    }
+    .w50 {
+        padding: 20px;
+        width: 100%;
+    }
 }
