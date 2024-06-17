@@ -198,11 +198,22 @@
     <!--extras-->
     <footer>
         <div class="center">
+
             <p>Todos os direitos reservados</p>
         </div>
         <!--center-->
     </footer>
 
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+    $(function() {
+
+        console.log("funciona")
+        let mensagem = "ola mundo"
+        alert(mensagem)
+    })
+    </script>
 </body>
 
 </html>
