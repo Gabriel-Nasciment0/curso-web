@@ -62,6 +62,9 @@ header {
     color: white;
     text-decoration: none;
 }
+.desktop a:hover{
+    text-decoration: underline;
+}
 .banner_principal {
     position: relative;
     width: 100%;
@@ -150,6 +153,55 @@ header {
     color: #444;
     font-size: 15px;
     margin-top: 10px;
+}
+.extras {
+    padding: 30px 0;
+    background: #404580;
+}
+.servicos_container,
+.depoimentos_container {
+    padding: 0 50px;
+}
+.extras .title {
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.depoimento_single {
+    padding: 15px 0;
+    border-bottom: 1px solid #5056a0;
+}
+.depoimento_descricao {
+    font-size: 15px;
+    color: white;
+    font-weight: 300;
+}
+.nome_autor {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.servicos ul {
+    margin: 20px 0;
+    list-style-position: inside;
+}
+.servicos li {
+    color: white;
+    margin: 20px 0;
+    list-style-position: inside;
+    margin-bottom: 15px;
+}
+footer {
+    background: #313462;
+    padding: 30px 0;
+}
+footer p {
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
 }
 @media screen and (max-width: 700px) {
     .desktop {
