@@ -1,3 +1,4 @@
+<?php include('config.php') ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -8,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos/all.min.css">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="<?php echo include PATH; ?> estilos/style.css">
     <title>Projeto 01</title>
 </head>
 
 <body>
+
 
     <header>
         <div class="center">
