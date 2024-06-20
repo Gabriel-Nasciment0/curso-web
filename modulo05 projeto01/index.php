@@ -1,4 +1,4 @@
-<?php include('config.php') ?>
+<?php include('C:\xampp\htdocs\GitHub\curso-web\modulo05 projeto01\config.php') ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
