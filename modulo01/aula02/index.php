@@ -12,7 +12,7 @@
         <?php
         echo $_SERVER['D']
 
-            ?>
+        ?>
     </p>
 </body>
 
