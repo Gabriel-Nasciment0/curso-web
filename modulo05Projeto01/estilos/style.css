@@ -204,9 +204,43 @@ footer p {
     font-weight: 400;
     font-size: 16px;
 }
+
 #map {
     width: 100%;
     height: 400px;
+}
+div.contato_container {
+    padding: 40px 0;
+    text-align: center;
+}
+div.contato_container input[type="text"] {
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #444;
+    margin: 8px 0;
+    max-width: 800px;
+    border: 1px solid black;
+}
+div.contato_container textarea {
+    width: 100%;
+    height: 120px;
+    padding-left: 8px;
+    font-size: 16px;
+    color: #444;
+    margin: 8px 0;
+    max-width: 800px;
+    resize: vertical;
+    padding: 8px;
+    border: 1px solid black;
+}
+div.contato_container input[type="submit"] {
+    background: #00c59e;
+    width: 140px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
 }
 @media screen and (max-width: 700px) {
     .desktop {

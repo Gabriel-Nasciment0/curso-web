@@ -15,7 +15,20 @@
 </head>
 
 <body>
+    <?php
+    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+    switch ($url) {
+        case 'sobre':
+            echo '<target target="sobre" />';
+            break;
 
+        case 'servicos':
+            echo '<target target="servicos" />';
+
+            break;
+    }
+
+    ?>
 
     <header>
         <div class="center">
@@ -28,9 +41,9 @@
             <nav class="desktop right">
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>Serviçoes">Serviçoes</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>Contato">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
             <!--desktop-->
@@ -40,9 +53,9 @@
                 </div>
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>Sobre">Sobre</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>Serviçoes">Serviçoes</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>Contato">Contato</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
@@ -55,13 +68,15 @@
 
     <?php
 
-    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     if (file_exists('pages/' . $url . '.php')) {
 
         include('pages/' . $url . '.php');
     } else {
-        // da pra fazer mt coisa aqui
-        include('pages/404.php');
+        if ($url != 'sobre' && $url != 'servicos') {
+            include('pages/404.php');
+        } else {
+            include('pages/home.php');
+        }
     }
 
 
