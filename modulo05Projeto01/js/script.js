@@ -29,6 +29,7 @@ $(function () {
     });
     if ($("target").lenght > 0) {
         var elemento = "#" + $("target").attr("target");
-        alert(elemento);
+        var divScroll = $(elemento).offset().top;
+        $("html,body").animate({ scrollTop: divScroll }, 2);
     }
 });

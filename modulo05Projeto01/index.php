@@ -18,8 +18,8 @@
     <?php
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     switch ($url) {
-        case 'sobre':
-            echo '<target target="sobre" />';
+        case 'depoimentos':
+            echo '<target target="depoimentos" />';
             break;
 
         case 'servicos':
@@ -41,7 +41,7 @@
             <nav class="desktop right">
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
@@ -53,7 +53,7 @@
                 </div>
                 <ul>
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
@@ -72,7 +72,7 @@
 
         include('pages/' . $url . '.php');
     } else {
-        if ($url != 'sobre' && $url != 'servicos') {
+        if ($url != 'depoimentos' && $url != 'servicos') {
             include('pages/404.php');
         } else {
             include('pages/home.php');
@@ -98,10 +98,9 @@
     </footer>
 
 
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <script src="js/script.js">
-
-    </script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/jquery-3.7.1.min.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/script.js"></script>
+    <script src="<?php echo INCLUDE_PATH; ?>js/slider.js"></script>
 </body>
 
 </html>

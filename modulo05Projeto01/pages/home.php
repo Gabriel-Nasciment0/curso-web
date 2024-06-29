@@ -88,7 +88,7 @@
 <!--especialidades-->
 <section class="extras">
     <div class="center">
-        <div class="w50 left depoimentos_container">
+        <div id="depoimentos" class="w50 left depoimentos_container">
             <h2 class="title">Depoimentos dos clientes</h2>
             <div class="depoimento_single">
                 <p class="depoimento_descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro
@@ -114,7 +114,7 @@
         </div>
         <!--w50-->
 
-        <div class="w50 left servicos_container">
+        <div id="servicos" class="w50 left servicos_container">
             <h2 class="title">Serviçoes</h2>
             <div class="servicos">
                 <ul>
