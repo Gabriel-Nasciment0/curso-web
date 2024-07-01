@@ -1,4 +1,19 @@
-<section class="banner_principal">
+
+
+
+
+
+
+<section class="banner_container">
+    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>modulo05Projeto01/images/form01.jpg);" class="banner_single">
+
+    </div><!--single-->
+    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>modulo05Projeto01\images\form02.jpg);" class="banner_single">
+
+    </div><!--single-->
+    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>modulo05Projeto01\images\form03.jpg);" class="banner_single">
+
+    </div><!--single-->
     <div class="overlay"></div>
     <div class="center">
         <form action="">
@@ -9,7 +24,7 @@
 
     </div>
     <!--center-->
-</section>
+</section><!--container-->
 <!--banner-->
 <section class="descricao_autor">
     <div class="center">
