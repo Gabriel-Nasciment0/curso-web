@@ -1,19 +1,13 @@
-
-
-
-
-
-
 <section class="banner_container">
-    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>modulo05Projeto01/images/form01.jpg);" class="banner_single">
+    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>/images/form01.jpg);" class="banner_single">
 
-    </div><!--single-->
-    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>modulo05Projeto01\images\form02.jpg);" class="banner_single">
+    </div>
+    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>/images/form02.jpg);" class="banner_single">
 
-    </div><!--single-->
-    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>modulo05Projeto01\images\form03.jpg);" class="banner_single">
+    </div>
+    <div style="background-image: url(<?php echo INCLUDE_PATH; ?>/images/form03.jpg);" class="banner_single">
 
-    </div><!--single-->
+    </div>
     <div class="overlay"></div>
     <div class="center">
         <form action="">
@@ -24,6 +18,10 @@
 
     </div>
     <!--center-->
+    <div class="bullets">
+
+
+    </div><!--bullets-->
 </section><!--container-->
 <!--banner-->
 <section class="descricao_autor">

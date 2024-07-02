@@ -32,4 +32,15 @@ $(function () {
         var divScroll = $(elemento).offset().top;
         $("html,body").animate({ scrollTop: divScroll }, 2);
     }
+    carregarDinamico();
+    function carregarDinamico() {
+        $("[realtime]").click(function () {
+            var pagina = $(this).attr("realtime");
+
+            $(".container_principal").load(
+                "/modulo05Projeto01/pages/" + pagina + ".php"
+            );
+            return false;
+        });
+    }
 });

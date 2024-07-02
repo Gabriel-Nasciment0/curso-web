@@ -43,7 +43,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
             <!--desktop-->
@@ -55,7 +55,7 @@
                     <li><a href="<?php echo INCLUDE_PATH; ?>">Home</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>depoimentos">Depoimentos</a></li>
                     <li><a href="<?php echo INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime="contato" href="<?php echo INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav>
             <div class="clear"></div>
@@ -64,30 +64,32 @@
         <!--center-->
     </header>
 
+    <div class="container_principal">
 
 
-    <?php
+        <?php
 
-    if (file_exists('pages/' . $url . '.php')) {
+        if (file_exists('pages/' . $url . '.php')) {
 
-        include('pages/' . $url . '.php');
-    } else {
-        if ($url != 'depoimentos' && $url != 'servicos') {
-            include('pages/404.php');
+            include('pages/' . $url . '.php');
         } else {
-            include('pages/home.php');
+            if ($url != 'depoimentos' && $url != 'servicos') {
+                include('pages/404.php');
+            } else {
+                include('pages/home.php');
+            }
         }
-    }
 
 
 
-    ?>
+        ?>
 
 
 
 
 
 
+    </div><!--container_principal-->
 
     <footer>
         <div class="center">
