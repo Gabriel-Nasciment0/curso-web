@@ -5,13 +5,13 @@
     <div class="center">
         <form>
             <input type="text" name="nome" placeholder="nome...">
-            <dir></dir>
+            <div></div>
             <input type="text" name="email" placeholder="Email...">
-            <dir></dir>
+            <div></div>
             <input type="text" name="telefone" placeholder="Telefone" ...>
-            <dir></dir>
+            <div></div>
             <textarea placeholder="Sua Mensagem" name="mensagem"></textarea>
-            <dir></dir>
+            <div></div>
             <input type="submit" name="acao" value="Enviar">
         </form>
     </div><!--center-->

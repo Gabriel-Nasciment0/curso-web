@@ -80,11 +80,13 @@
             }
         }
 
-
-        new Email()
-
-
         ?>
+
+        <?php
+        new Email()
+        ?>
+
+
 
 
 
