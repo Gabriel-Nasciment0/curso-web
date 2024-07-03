@@ -1,18 +1,17 @@
-<div id="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=disney%20Calif%C3%B3rnia+(meu%20mapa)&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href='https://maps-generator.com/'></a>
-</div><!--map-->
-<div class="contato_container">
-    <div class="center">
-        <form>
-            <input type="text" name="nome" placeholder="nome...">
-            <div></div>
-            <input type="text" name="email" placeholder="Email...">
-            <div></div>
-            <input type="text" name="telefone" placeholder="Telefone" ...>
-            <div></div>
-            <textarea placeholder="Sua Mensagem" name="mensagem"></textarea>
-            <div></div>
-            <input type="submit" name="acao" value="Enviar">
-        </form>
-    </div><!--center-->
-</div><!--container-->
+<div id="map"></div>
+<div class="contato-container">
+	<div class="center">
+		<form method="post" action="">
+			<input required type="text" name="nome" placeholder="Nome...">
+			<div></div>
+			<input required type="text" name="email" placeholder="E-mail..">
+			<div></div>
+			<input required type="text" name="telefone" placeholder="Telefone...">
+			<div></div>
+			<textarea required placeholder="Sua mensagem..." name="mensagem"></textarea>
+			<div></div>
+			<input type="hidden" name="identificador" value="form_contato" />
+			<input type="submit" name="acao" value="Enviar">
+		</form>
+	</div><!--center-->
+</div><!--contato-container-->
