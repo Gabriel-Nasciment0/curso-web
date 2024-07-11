@@ -1,0 +1,107 @@
+.box {
+    position: relative;
+    top: 0px;
+}
+
+.banner {
+    position: relative;
+    padding: 150px 0;
+    min-height: 500px;
+    background: url(https://images.pexels.com/photos/4239541/pexels-photo-4239541.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load)
+        no-repeat center;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+.banner > .container {
+    position: relative;
+    z-index: 2;
+}
+.overlay {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(15, 15, 15, 0.5);
+}
+.chamada-banner h2 {
+    color: #26a599;
+    font-size: 50px;
+}
+.chamada-banner p {
+    margin: 25px 0;
+    color: white;
+    font-size: 21px;
+    font-weight: bold !important;
+}
+.chamada-banner a {
+    display: inline-block;
+    color: white;
+    padding: 10px 18px;
+    font-size: 19px;
+    border-radius: 10px;
+    background: #26a69a;
+    text-decoration: none;
+}
+.cadastro-lead {
+    background: #26a69a;
+    padding: 20px 0;
+}
+.cadastro-lead h2 {
+    color: white;
+    font-size: 24px;
+}
+.cadastro-lead form {
+    position: relative;
+    top: -5px;
+}
+.cadastro-lead input[type="text"] {
+    width: 70%;
+    vertical-align: middle;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.cadastro-lead input[type="submit"] {
+    width: 20%;
+    vertical-align: middle;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.depoimentos {
+    padding: 40px 0;
+}
+.depoimentos h2 {
+    color: #4b4b4b;
+}
+.depoimentos blockquote {
+    color: #4b4b4b;
+    font-size: 16px;
+}
+
+.diferenciais {
+    padding: 30px 0;
+    background: rgb(225, 225, 225);
+}
+.diferenciais > h2{
+    color: #4b4b4b;
+}
+.diferenciais-container {
+    margin-top: 30px;
+}
+.diferenciais-container h2{
+    font-size: 22px;
+}
+.diferenciais-container h3 {
+    color: #26a69a;
+}
+
+@media screen and (max-width: 1000px) {
+    .cadastro-lead form {
+        position: relative;
+        display: block;
+        top: 0px;
+    }
+}
