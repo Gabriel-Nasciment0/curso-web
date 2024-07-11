@@ -28,7 +28,7 @@
                         <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
-               
+
             </div>
         </div>
     </nav>
