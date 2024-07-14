@@ -85,19 +85,41 @@
     padding: 30px 0;
     background: rgb(225, 225, 225);
 }
-.diferenciais > h2{
+.diferenciais > h2 {
     color: #4b4b4b;
 }
 .diferenciais-container {
     margin-top: 30px;
 }
-.diferenciais-container h2{
+.diferenciais-container h2 {
     font-size: 22px;
 }
 .diferenciais-container h3 {
     color: #26a69a;
 }
-
+.equipe-container {
+    padding: 30px 0;
+}
+.equipe-single {
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.75);
+    padding: 20px 10px;
+    border: 1px solid #ccc;
+}
+.equipe h2 {
+    margin: 0;
+    text-align: center;
+    padding: 10px 2%;
+    background: #26a69a;
+    color: white;
+}
+.user-picture {
+    width: 100%;
+    padding-top: 100%;
+    background: #ccc;
+    border-radius: 50%;
+}
 @media screen and (max-width: 1000px) {
     .cadastro-lead form {
         position: relative;
