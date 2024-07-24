@@ -123,6 +123,7 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="user-picture">
+                                        <div class="user-pucture-child"></div>
 
                                     </div><!--userpicture-->
                                 </div>
@@ -138,6 +139,7 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="user-picture">
+                                        <div class="user-pucture-child"></div>
 
                                     </div><!--userpicture-->
                                 </div>
@@ -153,7 +155,7 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="user-picture">
-
+                                        <div class="user-pucture-child"></div>
                                     </div><!--userpicture-->
                                 </div>
                                 <div class="col-md-10">
@@ -168,6 +170,7 @@
                             <div class="row">
                                 <div class="col-md-2">
                                     <div class="user-picture">
+                                        <div class="user-pucture-child"></div>
 
                                     </div><!--userpicture-->
                                 </div>
@@ -178,39 +181,11 @@
                             </div>
                         </div><!--equipe-single-->
                     </div><!--col-md-->
-                    <div class="col-md-6">
-                        <div class="equipe-single">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="user-picture">
 
-                                    </div><!--userpicture-->
-                                </div>
-                                <div class="col-md-10">
-                                    <h3>Gabriel</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel eius culpa, quos quam hic consectetur dolores natus aut aperiam ullam accusantium suscipit eum dolorem maiores mollitia corporis similique. Soluta, optio!</p>
-                                </div>
-                            </div>
-                        </div><!--equipe-single-->
-                    </div><!--col-md-->
-                    <div class="col-md-6">
-                        <div class="equipe-single">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="user-picture">
-
-                                    </div><!--userpicture-->
-                                </div>
-                                <div class="col-md-10">
-                                    <h3>Gabriel</h3>
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel eius culpa, quos quam hic consectetur dolores natus aut aperiam ullam accusantium suscipit eum dolorem maiores mollitia corporis similique. Soluta, optio!</p>
-                                </div>
-                            </div>
-                        </div><!--equipe-single-->
-                    </div><!--col-md-->
                 </div><!--row-->
             </div><!--equipe-container-->
         </section><!--equipe-->
+        
     </div><!--box-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
