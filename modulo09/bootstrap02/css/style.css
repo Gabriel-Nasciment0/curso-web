@@ -125,7 +125,10 @@
     background-color: #0000ff;
 }
 /* navbar */
-#header{
+body {
+    background: rgb(225, 225, 225);
+}
+#header {
     background: #333;
     color: white;
 }
