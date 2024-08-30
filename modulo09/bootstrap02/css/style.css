@@ -131,6 +131,7 @@ body {
 #header {
     background: #333;
     color: white;
+    margin-bottom: 20px;
 }
 #header h2 {
     margin: 20px;

@@ -63,8 +63,45 @@
         </div>
     </header>
 
+    <section class="bread">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item  active"><a href="#">Home</a></li>
 
+                </ol>
+            </nav>
+        </div><!--container-->
+    </section><!--bread-->
 
+    <section class="principal">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                            Home
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">Sobre</a>
+                        <a href="#" class="list-group-item list-group-item-action">Equipe</a>
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Sobre</h3>
+                        </div>
+                    </div><!--painel-->
+                    <div class="panel-body">
+                        <p>nao funfo</p>
+                    </div><!--painel-body-->
+                </div>
+
+            </div><!--row-->
+        </div><!--container-->
+    </section><!--principal
 
 
 
