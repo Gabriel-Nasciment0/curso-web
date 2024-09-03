@@ -76,6 +76,7 @@
 
     <section class="principal">
         <div class="container">
+
             <div class="row">
 
                 <div class="col-md-3">
@@ -87,18 +88,86 @@
                         <a href="#" class="list-group-item list-group-item-action">Equipe</a>
 
                     </div>
-                </div>
+                </div><!--md-3-->
                 <div class="col-md-9">
-                    <div class="panel">
-                        <div class="panel-heading">
+                    <div class="panel panel-default">
+                        <div class="panel-heading cor-padrao">
                             <h3 class="panel-title">Sobre</h3>
                         </div>
-                    </div><!--painel-->
-                    <div class="panel-body">
-                        <p>nao funfo</p>
-                    </div><!--painel-body-->
-                </div>
+                        <div class="panel-body">
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="email">Código HTML:</label>
+                                    <textarea name="sobre" style="height: 140px;resize: vertical;" class="form-control"></textarea>
+                                </div>
+                                <input type="hidden" name="editar_sobre" value="">
+                                <button type="submit" name="acao" class="btn btn-default">Submit</button>
+                            </form>
 
+
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading cor-padrao">
+                            <h3 class="panel-title">Cadastrar Equipe</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form method="post">
+                                <div class="form-group">
+                                    <label for="email">Nome do membro:</label>
+
+                                    <input type="text" name="nome_membro" class="form-control">
+                                    <label for="email">Decrição do Membro:</label>
+                                    <textarea name="sobre" style="height: 140px;resize: vertical;" class="form-control"></textarea>
+                                </div>
+                                <input type="hidden" name="editar_sobre" value="">
+                                <button type="submit" name="acao" class="btn btn-default">Submit</button>
+                            </form>
+
+                        </div>
+                    </div><!--panel-->
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading cor-padrao">
+                            <h3 class="panel-title">Membros da Equipe</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table caption-top">
+
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ID:</th>
+                                        <th scope="col">Nome do membro</th>
+                                        <th scope="col">Last</th>
+                                        <th scope="col">Handle</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div><!--panel-->
+                </div><!--md-9-->
             </div><!--row-->
         </div><!--container-->
     </section><!--principal
