@@ -1,0 +1,3 @@
+RewriteEngine On
+#a linha de codigo abaixo protege os diretorios
+Options -Indexes
