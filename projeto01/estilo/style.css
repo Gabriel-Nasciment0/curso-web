@@ -128,16 +128,49 @@ header .logo {
 }
 .descricao-autor h2 {
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 300;
     color: #444;
 }
 .descricao-autor p {
     font-size: 16px;
     margin-top: 10px;
+    font-weight: 300;
     color: #444;
 }
-
+.especialidades {
+    padding: 40px 0;
+    background: #e2e2e2;
+}
+.especialidades .title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+    color: #999;
+}
+.box-especialidade {
+    text-align: center;
+    margin: 40px 0;
+    padding: 0 30px;
+}
+.box-especialidade h3 {
+    color: #404580;
+    font-size: 40px;
+}
+.box-especialidade h4 {
+    color: #bababa;
+    font-size: 25px;
+    font-weight: 300;
+}
+.box-especialidade p {
+    color: #444;
+    font-size: 15px;
+    margin-top: 10px;
+}
 @media screen and (max-width: 700px) {
+    .w33 {
+        width: 100%;
+    }
+
     .desktop {
         display: none;
     }
@@ -173,6 +206,10 @@ header .logo {
         display: block;
         color: #444;
         text-decoration: none;
+    }
+    .box-especialidade {
+        margin: 0;
+        padding: 40px 20px;
     }
 }
 @media screen and (max-width: 1000px) {

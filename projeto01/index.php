@@ -35,7 +35,7 @@
             </nav><!--desktop-->
             <nav class="mobile right">
                 <div class="botao-menu-mobile">
-                <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <ul>
                     <li><a href="">Home</a></li>
@@ -82,19 +82,20 @@
             <h2 class="title">Especialidades</h2>
             <div class=" w33 left box-especialidade">
                 <h3><i class="fa-brands fa-css3"></i></h3>
-                <h3>CSS3</h3>
+                <h4>CSS3</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum similique obcaecati ipsam fugit omnis adipisci explicabo debitis et perspiciatis, veritatis amet, facilis fugiat id excepturi, impedit nobis eligendi? Fugit?</p>
             </div><!--box-especialidade-->
             <div class="w33 left box-especialidade">
                 <h3><i class="fa-brands fa-html5"></i></h3>
-                <h3>HTML5</h3>
+                <h4>HTML5</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum similique obcaecati ipsam fugit omnis adipisci explicabo debitis et perspiciatis, veritatis amet, facilis fugiat id excepturi, impedit nobis eligendi? Fugit?</p>
             </div><!--box-especialidade-->
             <div class="w33 left box-especialidade">
                 <h3><i class="fa-brands fa-js"></i></h3>
-                <h3>JavaScript</h3>
+                <h4>JavaScript</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque laborum similique obcaecati ipsam fugit omnis adipisci explicabo debitis et perspiciatis, veritatis amet, facilis fugiat id excepturi, impedit nobis eligendi? Fugit?</p>
             </div><!--box-especialidade-->
+            <div class="clear"></div>
         </div><!--center-->
     </section><!--especialidades-->
 
