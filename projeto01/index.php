@@ -34,6 +34,9 @@
                 </ul>
             </nav><!--desktop-->
             <nav class="mobile right">
+                <div class="botao-menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+                </div>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Sobre</a></li>

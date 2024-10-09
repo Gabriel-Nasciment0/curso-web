@@ -137,12 +137,51 @@ header .logo {
     color: #444;
 }
 
+@media screen and (max-width: 700px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .mobile ul {
+        display: none;
+    }
+    .botao-menu-mobile {
+        font-size: 24px;
+        cursor: pointer;
+        color: white;
+    }
+    .mobile ul {
+        display: block;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        z-index: 3;
+        text-align: center;
+    }
+    .mobile li {
+        display: none;
+        background: white;
+        font-weight: 300;
+        border-bottom: 1px solid #ccc;
+        font-size: 17px;
+        padding: 8px 0;
+    }
+    .mobile a {
+        display: block;
+        color: #444;
+        text-decoration: none;
+    }
+}
 @media screen and (max-width: 1000px) {
     .w50 {
         width: 100%;
     }
     .descricao-autor img {
-        width: 100%;
+        float: none !important;
+
         max-width: 1000px;
 
         max-height: 600px;
