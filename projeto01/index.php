@@ -46,6 +46,7 @@
     </header>
 
     <section class="banner-principal">
+        <div class="overlay"></div>
         <div class="center">
 
             <form>
@@ -68,7 +69,7 @@
         </div><!--center-->
         <div class="w50 left">
 
-            <img src="images/foto.jpg">
+            <img class="right" src="images/foto.jpg">
         </div><!--w50-->
         <div class="clear"></div>
     </section><!--descricao-autor-->
