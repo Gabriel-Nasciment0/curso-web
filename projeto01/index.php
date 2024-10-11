@@ -101,9 +101,9 @@
 
     <section class="extras">
         <div class="center">
-            <div class="w50 left">
+            <div class="w50 left depoimentos-container">
 
-                <h2 class="title">Depoimentos</h2>
+                <h2 class="title">Depoimentos dos nossos clientes</h2>
                 <div class="depoimento-single">
                     <p class="depoimento-descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero culpa aliquam quod laudantium qui sit explicabo earum expedita repellendus optio blanditiis dignissimos, inventore, omnis repellat molestiae magnam tenetur quam reiciendis.</p>
                     <p class="nome-autor">lorem ipsum</p>
@@ -117,7 +117,7 @@
                     <p class="nome-autor">lorem ipsum</p>
                 </div><!--depoimento-single-->
             </div><!--w50-->
-            <div class="w50 left">
+            <div class="w50 left servicos-container">
 
                 <h2 class="title">Serviços</h2>
                 <div class="servicos">
