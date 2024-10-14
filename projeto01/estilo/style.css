@@ -233,7 +233,7 @@ footer p {
         color: white;
     }
     .mobile ul {
-        display: none;
+        display: block;
         position: absolute;
         top: 55px;
         left: 0;
@@ -242,7 +242,7 @@ footer p {
         text-align: center;
     }
     .mobile li {
-        display: none;
+        display: block;
         background: white;
         font-weight: 300;
         border-bottom: 1px solid #ccc;
