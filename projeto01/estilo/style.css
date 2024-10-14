@@ -226,9 +226,7 @@ footer p {
     .mobile {
         display: block;
     }
-    .mobile ul {
-        display: none;
-    }
+
     .botao-menu-mobile {
         font-size: 24px;
         cursor: pointer;
