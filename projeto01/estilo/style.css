@@ -233,7 +233,7 @@ footer p {
         color: white;
     }
     .mobile ul {
-        display: block;
+        display: none;
         position: absolute;
         top: 55px;
         left: 0;
