@@ -21,6 +21,19 @@
 </head>
 
 <body>
+    <?php
+    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+    switch ($url) {
+        case 'sobre':
+            echo '<target target="sobre" />';
+            break;
+        case 'servicos':
+            echo '<target target="servicos" />';
+            break;
+    }
+
+
+    ?>
     <header>
         <div class="center">
 
@@ -52,14 +65,19 @@
 
 
 
-    $url = isset($_GET['url']) ? $_GET['url'] : 'home';
+
 
 
     if (file_exists('pages/' . $url . '.php')) {
         include('pages/' . $url . '.php');
     } else {
-        $pagina404 = true;
-        include('pages/err404.php');
+        if ($url != 'sobre' && $url != 'servicos') {
+
+            $pagina404 = true;
+            include('pages/err404.php');
+        } else {
+            include('pages/home.php');
+        }
     }
 
 
