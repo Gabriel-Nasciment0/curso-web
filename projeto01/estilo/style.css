@@ -215,6 +215,39 @@ footer p {
     font-size: 16px;
     font-weight: 400;
 }
+footer.fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* erro404 */
+
+.err404 h1 {
+    text-align: center;
+    color: #444;
+    font-weight: 400;
+    border-top: 2px solid #444;
+    font-size: 28px;
+}
+.err404 p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #444;
+    font-weight: 300;
+    text-align: center;
+}
+.err404 a {
+    color: #444;
+}
+.wraper-404 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 2%;
+}
 @media screen and (max-width: 700px) {
     .w33 {
         width: 100%;
