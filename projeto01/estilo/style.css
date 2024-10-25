@@ -75,7 +75,7 @@ header .logo {
     width: 100%;
     height: 100%;
 
-    background-position: center;
+    background-position: center 70%;
     background-size: cover;
 }
 
@@ -293,6 +293,26 @@ footer.fixed {
     color: white;
     cursor: pointer;
     border: none;
+}
+/* slide */
+.bullets {
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.bullets span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #444;
+}
+span.active-slide {
+    background: white;
 }
 @media screen and (max-width: 700px) {
     .w33 {

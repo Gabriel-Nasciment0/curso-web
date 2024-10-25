@@ -1,7 +1,7 @@
 <section class="banner-container">
     <div style="background-image: url('<?php INCLUDE_PATH; ?>images/slide01.jpg');" class="banner-single"></div><!--banner-single-->
     <div style="background-image: url('<?php INCLUDE_PATH; ?>images/slide02.jpg');" class="banner-single"></div><!--banner-single-->
-    <div style="background-image: url('<?php INCLUDE_PATH; ?>images/slide02.jpg');" class="banner-single"></div><!--banner-single-->
+    <div style="background-image: url('<?php INCLUDE_PATH; ?>images/slide03.jpg');" class="banner-single"></div><!--banner-single-->
 
 
     <div class="overlay"></div>
@@ -13,6 +13,10 @@
             <input type="submit" name="acao" value="Cadastrar">
         </form>
     </div><!--center-->
+    <div class="bullets">
+
+
+    </div><!--bullets-->
 </section><!--banner-principal-->
 
 <section class="descricao-autor">
