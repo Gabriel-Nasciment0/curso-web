@@ -24,8 +24,8 @@
     <?php
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     switch ($url) {
-        case 'sobre':
-            echo '<target target="sobre" />';
+        case 'depoimentos':
+            echo '<target target="depoimentos" />';
             break;
         case 'servicos':
             echo '<target target="servicos" />';
@@ -41,7 +41,7 @@
             <nav class="desktop right">
                 <ul>
                     <li><a href="<?php INCLUDE_PATH; ?>home">Home</a></li>
-                    <li><a href="<?php INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php INCLUDE_PATH; ?>depoimentos">depoimentos</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
@@ -52,7 +52,7 @@
                 </div>
                 <ul>
                     <li><a href="<?php INCLUDE_PATH; ?>home">Home</a></li>
-                    <li><a href="<?php INCLUDE_PATH; ?>sobre">Sobre</a></li>
+                    <li><a href="<?php INCLUDE_PATH; ?>depoimentos">depoimentos</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>servicos">Serviços</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
@@ -71,7 +71,7 @@
     if (file_exists('pages/' . $url . '.php')) {
         include('pages/' . $url . '.php');
     } else {
-        if ($url != 'sobre' && $url != 'servicos') {
+        if ($url != 'depoimentos' && $url != 'servicos') {
 
             $pagina404 = true;
             include('pages/err404.php');
@@ -111,6 +111,12 @@
     <script src="<?php INCLUDE_PATH; ?> https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- JavaScript -->
     <script src="<?php INCLUDE_PATH; ?>js/script.js"></script>
+    <?php if ($url == 'home' || $url == '') {  ?>
+        <script src="<?php INCLUDE_PATH; ?>js/slider.js"></script>
+
+    <?php }; ?>
+
+
 </body>
 
 </html>

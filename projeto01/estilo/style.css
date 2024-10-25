@@ -62,11 +62,20 @@ header .logo {
     color: white;
     text-decoration: none;
 }
-.banner-principal {
+.banner-container {
     width: 100%;
     height: 600px;
     position: relative;
-    background: url(../images/banner.jpg) no-repeat center;
+}
+
+.banner-single {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
     background-size: cover;
 }
 
@@ -79,7 +88,7 @@ header .logo {
     background-color: rgba(51, 51, 51, 0.6);
     z-index: 1;
 }
-.banner-principal form {
+.banner-container form {
     position: absolute;
     width: 98%;
     max-width: 600px;
@@ -88,14 +97,14 @@ header .logo {
     transform: translate(-50%, -50%);
     z-index: 2;
 }
-.banner-principal form h2 {
+.banner-container form h2 {
     color: white;
     font-weight: 300;
     font-size: 30px;
     text-align: center;
 }
 
-.banner-principal form input[type="email"] {
+.banner-container form input[type="email"] {
     width: 100%;
     height: 66px;
     background: white;
@@ -105,7 +114,7 @@ header .logo {
     padding-left: 10px;
 }
 
-.banner-principal form input[type="submit"] {
+.banner-container form input[type="submit"] {
     width: 100%;
     height: 66px;
     background: #00c59e;
