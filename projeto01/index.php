@@ -21,6 +21,7 @@
 </head>
 
 <body>
+    <base base="<?php echo INCLUDE_PATH; ?>">
     <?php
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     switch ($url) {
@@ -43,7 +44,7 @@
                     <li><a href="<?php INCLUDE_PATH; ?>home">Home</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>depoimentos">depoimentos</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime href="<?php INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--desktop-->
             <nav class="mobile right">
@@ -54,13 +55,15 @@
                     <li><a href="<?php INCLUDE_PATH; ?>home">Home</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>depoimentos">depoimentos</a></li>
                     <li><a href="<?php INCLUDE_PATH; ?>servicos">Serviços</a></li>
-                    <li><a href="<?php INCLUDE_PATH; ?>contato">Contato</a></li>
+                    <li><a realtime href="<?php INCLUDE_PATH; ?>contato">Contato</a></li>
                 </ul>
             </nav><!--mobile-->
             <div class="clear"></div>
         </div><!--center-->
     </header>
-    <?php
+    <div class="container-principal">
+
+        <?php
 
 
 
@@ -68,17 +71,17 @@
 
 
 
-    if (file_exists('pages/' . $url . '.php')) {
-        include('pages/' . $url . '.php');
-    } else {
-        if ($url != 'depoimentos' && $url != 'servicos') {
-
-            $pagina404 = true;
-            include('pages/err404.php');
+        if (file_exists('pages/' . $url . '.php')) {
+            include('pages/' . $url . '.php');
         } else {
-            include('pages/home.php');
+            if ($url != 'depoimentos' && $url != 'servicos') {
+
+                $pagina404 = true;
+                include('pages/err404.php');
+            } else {
+                include('pages/home.php');
+            }
         }
-    }
 
 
 
@@ -98,12 +101,13 @@
 
 
 
-    ?>
-    <footer <?php if (isset($pagina404) && $pagina404 = true) echo 'class="fixed";' ?>>
-        <div class="center">
+        ?>
+        <footer <?php if (isset($pagina404) && $pagina404 = true) echo 'class="fixed";' ?>>
+    </div><!--container-principal-->
+    <div class="center">
 
-            <p>Todos os direitos reservados</p>
-        </div><!--center-->
+        <p>Todos os direitos reservados</p>
+    </div><!--center-->
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php INCLUDE_PATH; ?>js/jquery-3.7.1.min.js"></script>
