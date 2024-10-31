@@ -30,4 +30,23 @@ $(function () {
             return false;
         });
     }
+    // carregamento expecialidades dinamico
+    var atual = -1;
+    var maximo = $(".box-especialidade").length - 1;
+    var animacaoDeley = 2;
+    var timer;
+
+    executarAnimacao();
+    function executarAnimacao() {
+        $(".box-especialidade").hide();
+        timer = setInterval(logicaAnimacao, animacaoDeley * 1000);
+        function logicaAnimacao() {
+            atual++;
+            if (atual > maximo) {
+                clearInterval(timer);
+                return false;
+            }
+            $(".box-especialidade").eq(atual).fadeIn();
+        }
+    }
 });

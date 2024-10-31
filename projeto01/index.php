@@ -16,6 +16,7 @@
     <link rel="preconnect" href="<?php INCLUDE_PATH; ?> https://fonts.googleapis.com">
     <link rel="preconnect" href="<?php INCLUDE_PATH; ?> https://fonts.gstatic.com" crossorigin>
     <link href="<?php INCLUDE_PATH; ?> https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <!-- CSS -->
     <link rel="stylesheet" href=" <?php INCLUDE_PATH; ?> estilo/style.css">
 </head>
