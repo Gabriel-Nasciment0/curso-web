@@ -34,9 +34,9 @@
             break;
     }
 
+    new Email();
 
 
-    new Email()
 
 
 

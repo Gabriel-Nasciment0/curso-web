@@ -8,9 +8,16 @@
     <div class="center">
         <?php
         //prescisa de uma hospedagem
-        // new Mail();
+        if (isset($_post['acao'])) {
+            //foi enviado
+            if ($_post['email'] != '') {
+                $email = $_post['email'];
+            } else {
+                echo 'insira um email valido';
+            }
+        }
         ?>
-        <form>
+        <form method="post">
             <h2>Qual o seu e-mail</h2>
             <input type="email" name="email" required>
             <input type="submit" name="acao" value="Cadastrar">
