@@ -6,7 +6,10 @@
 
     <div class="overlay"></div>
     <div class="center">
-
+        <?php
+        //prescisa de uma hospedagem
+        // new Mail();
+        ?>
         <form>
             <h2>Qual o seu e-mail</h2>
             <input type="email" name="email" required>
