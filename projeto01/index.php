@@ -34,6 +34,7 @@
             break;
     }
 
+    // mail PHPMailer
     new Email();
 
 
@@ -78,7 +79,6 @@
         </div><!--center-->
     </header>
     <div class="container-principal">
-
         <?php
 
 

@@ -8,12 +8,17 @@
     <div class="center">
         <?php
         //prescisa de uma hospedagem
-        if (isset($_post['acao'])) {
+        if (isset($_POST['acao'])) {
             //foi enviado
-            if ($_post['email'] != '') {
-                $email = $_post['email'];
+            if ($_POST['email'] != '') {
+                $email = $_POST['email'];
+                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                    $email = new Email();
+                } else {
+                    echo '<script>alert("Campo invalido") </script>';
+                }
             } else {
-                echo 'insira um email valido';
+                echo '<script>alert("Campo vazio") </script>';
             }
         }
         ?>

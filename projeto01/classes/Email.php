@@ -1,43 +1,41 @@
 <?php
 
-// Inclui o PHPMailer
-require 'caminho/para/PHPMailerAutoload.php';
-
 class Email
 {
     function __construct()
     {
+        //NAO FUNCIONA
+
         $mail = new PHPMailer;
 
-        // Ativa o modo de depuração, caso queira ver mais detalhes (3 para modo avançado)
-        // $mail->SMTPDebug = 3;
 
-        // Configurações do servidor SMTP
-        $mail->isSMTP();                                      // Define o uso do SMTP
-        $mail->Host = 'smtp.gmail.com';                       // Servidor SMTP do Gmail
-        $mail->SMTPAuth = true;                               // Habilita autenticação SMTP
-        $mail->Username = 'seu-email@gmail.com';              // Seu endereço de e-mail
-        $mail->Password = 'sua-senha';                        // Senha do seu e-mail
-        $mail->SMTPSecure = 'tls';                            // Criptografia TLS
-        $mail->Port = 587;                                    // Porta do servidor SMTP para o Gmail
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'gabrielhenrique4004.gmail.com';                 // SMTP username
+        $mail->Password = '&aBd9fwD3TWQ$PH$9o4d8i4^gcfq*^#k%!g!KuDv4HQnfDy&q9sjCGtaMS@CMb4Y27Z^AWweS&cU&oABM%J@ezyeZz2AJsUu7R6o';                           // SMTP password
+        $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 465;                                    // TCP port to connect to
 
-        // Configurações do remetente e destinatário
-        $mail->setFrom('seu-email@gmail.com', 'Seu Nome');    // Remetente
-        $mail->addAddress('destinatario@exemplo.com', 'Destinatário'); // Destinatário principal
-        $mail->addReplyTo('info@exemplo.com', 'Informação');  // Responder para
+        $mail->setFrom('gabrielhenrique4004.gmail.com', 'gabriel');
+        $mail->addAddress('gabrielhenrique40042.gmail.com', 'gabriel');     // Add a recipient
+        // $mail->addReplyTo('info@example.com', 'Information');
+        // $mail->addCC('cc@example.com');
+        // $mail->addBCC('bcc@example.com');
 
-        // Conteúdo do e-mail
-        $mail->isHTML(true);                                  // Define o formato como HTML
-        $mail->Subject = 'Assunto do E-mail';
-        $mail->Body    = 'Este é o corpo da mensagem em <b>HTML</b>';
-        $mail->AltBody = 'Este é o corpo da mensagem em texto plano para clientes que não suportam HTML';
+        // $mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
+        //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+        $mail->isHTML(true);                                  // Set email format to HTML
 
-        // Envio do e-mail
+        $mail->Subject = 'assunto email';
+        $mail->Body    = 'corpo <b>email</b>';
+        $mail->AltBody = 'corpo email';
+
         if (!$mail->send()) {
-            echo 'Não foi possível enviar a mensagem.';
-            echo 'Erro: ' . $mail->ErrorInfo;
+            echo 'Message could not be sent.';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
         } else {
-            echo 'Mensagem enviada com sucesso!';
+            echo 'Message has been sent';
         }
     }
 }
