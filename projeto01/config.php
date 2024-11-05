@@ -2,9 +2,9 @@
 // envio de email 
 $autoLoad = function ($class) {
     if ($class == 'Email') {
-        include('classes/PHPMailer/PHPMailerAutoload.php');
+        include('classes/vendor/autoload.php');
     }
-    include('classes/' . $class . '.php');
+    include('classes/phpmailer/' . $class . '.php');
 };
 spl_autoload_register($autoLoad);
 // vincular aruivo ao diretorio principal
