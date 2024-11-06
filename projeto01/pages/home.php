@@ -13,7 +13,14 @@
             if ($_POST['email'] != '') {
                 $email = $_POST['email'];
                 if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    $email = new Email();
+                    $email = new Email('smtp.gmail.com', 'gabrielhenrique40042@gmail.com', 'b8xHFr5J@twt3EKKsP3kp!9$om4rJsdqnu&3uTHzrWZYN7FXeAe$BjGP*aPsC4THQzwJ&@^sy#Q8KVU$Hd#k$mDNRCV4v2sX^mvk', 'gabriel');
+                    $email->addAdress('gabrielhenrique4004@gmail.com', 'gabriel');
+                    $email->formatarEmail(array('assunto' => 'Novo email cadastrado', 'corpo' => $email));
+                    if ($email->enviarEmail()) {
+                        echo '<script>alert("Eviado") </script>';
+                    } else {
+                        echo '<script>alert("Erro") </script>';
+                    }
                 } else {
                     echo '<script>alert("Campo invalido") </script>';
                 }
