@@ -18,11 +18,10 @@ class Email
         $this->mailer->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
         $this->mailer->Port = 465;                                    // TCP port to connect to
 
-        $mail->setFrom($username, $name);
+        $this->mailer->setFrom($username, $name);
 
-        $mail->isHTML(true);                                  // Set email format to HTML
-
-
+        $this->mailer->isHTML(true);                                  // Set email format to HTML
+        $this->mailer->CharSet = 'UTF-8';
     }
     public function addAdress($email, $nome)
     {
@@ -31,13 +30,13 @@ class Email
     }
     public function formatarEmail($info)
     {
-        $mail->Subject = $info['assunto'];
-        $mail->Body    = $info['corpo'];
-        $mail->AltBody = strip_tags($info['assunto']);
+        $this->mailer->Subject = $info['assunto'];
+        $this->mailer->Body    = $info['corpo'];
+        $this->mailer->AltBody = strip_tags($info['assunto']);
     }
     public function enviarEmail()
     {
-        if ($this->mailer->sendMail()) {
+        if ($this->mailer->send()) {
             return true;
         } else {
             return false;

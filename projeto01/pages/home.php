@@ -6,32 +6,11 @@
 
     <div class="overlay"></div>
     <div class="center">
-        <?php
-        //prescisa de uma hospedagem
-        if (isset($_POST['acao'])) {
-            //foi enviado
-            if ($_POST['email'] != '') {
-                $email = $_POST['email'];
-                if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                    $email = new Email('smtp.gmail.com', 'gabrielhenrique40042@gmail.com', 'b8xHFr5J@twt3EKKsP3kp!9$om4rJsdqnu&3uTHzrWZYN7FXeAe$BjGP*aPsC4THQzwJ&@^sy#Q8KVU$Hd#k$mDNRCV4v2sX^mvk', 'gabriel');
-                    $email->addAdress('gabrielhenrique4004@gmail.com', 'gabriel');
-                    $email->formatarEmail(array('assunto' => 'Novo email cadastrado', 'corpo' => $email));
-                    if ($email->enviarEmail()) {
-                        echo '<script>alert("Eviado") </script>';
-                    } else {
-                        echo '<script>alert("Erro") </script>';
-                    }
-                } else {
-                    echo '<script>alert("Campo invalido") </script>';
-                }
-            } else {
-                echo '<script>alert("Campo vazio") </script>';
-            }
-        }
-        ?>
+
         <form method="post">
             <h2>Qual o seu e-mail</h2>
             <input type="email" name="email" required>
+            <input type="hidden" name="identificador" value="form_home">
             <input type="submit" name="acao" value="Cadastrar">
         </form>
     </div><!--center-->

@@ -22,8 +22,69 @@
 </head>
 
 <body>
+    <?php
+    //prescisa de uma hospedagem
+    //envio de email
+    if (isset($_POST['acao']) && $_POST['identificador'] == 'form_home') {
+        //foi enviado
+        if ($_POST['email'] != '') {
+            $email = $_POST['email'];
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                $mail = new Email(
+                    'smtp.gmail.com',
+                    'gabrielhenrique40042@gmail.com',
+                    'b8xHFr5J@twt3EKKsP3kp!9$om4rJsdqnu&3uTHzrWZYN7FXeAe$BjGP*aPsC4THQzwJ&@^sy#Q8KVU$Hd#k$mDNRCV4v2sX^mvk',
+                    'gabriel'
+                );
+                $mail->addAdress(
+                    'gabrielhenrique4004@gmail.com',
+                    'gabriel'
+                );
+                $mail->formatarEmail(array('assunto' => 'Novo email cadastrado', 'corpo' => $email));
+                if ($mail->enviarEmail()) {
+                    echo '<script>alert("Eviado") </script>';
+                } else {
+                    echo '<script>alert("Erro") </script>';
+                }
+            } else {
+                echo '<script>alert("Campo invalido") </script>';
+            }
+        } else {
+            echo '<script>alert("Campo vazio") </script>';
+        }
+    } else if (isset($_POST['acao']) && $_POST['identificador'] == 'form_contato') {
+        //        $nome = $_POST['nome'];
+        //      $email = $_POST['email'];
+        //    $mensagem = $_POST['mensagem'];
+        //  $telefone = $_POST['telefone'];
+        $assunto = 'Nova mensagem do site';
+        $corpo = '';
+        foreach ($_POST as $key => $value) {
+            $corpo .= ucfirst($key) . ":" . $value;
+            $corpo .= "<hr>";
+        }
+        $info = array('assunto' => $assunto, 'corpo' => $corpo);
+        $mail = new Email(
+            'smtp.gmail.com',
+            'gabrielhenrique40042@gmail.com',
+            'b8xHFr5J@twt3EKKsP3kp!9$om4rJsdqnu&3uTHzrWZYN7FXeAe$BjGP*aPsC4THQzwJ&@^sy#Q8KVU$Hd#k$mDNRCV4v2sX^mvk',
+            'gabriel'
+        );
+        $mail->addAdress(
+            'gabrielhenrique4004@gmail.com',
+            'gabriel'
+        );
+        $mail->formatarEmail($info);
+        if ($mail->enviarEmail()) {
+            echo '<script>alert("Eviado") </script>';
+        } else {
+            echo '<script>alert("Erro") </script>';
+        }
+    }
+    ?>
     <base base="<?php echo INCLUDE_PATH; ?>">
     <?php
+    //rolagem de tela
     $url = isset($_GET['url']) ? $_GET['url'] : 'home';
     switch ($url) {
         case 'depoimentos':
@@ -35,7 +96,7 @@
     }
 
     // mail PHPMailer
-    new Email();
+
 
 
 
@@ -86,7 +147,7 @@
 
 
 
-
+        //validação de pagina
         if (file_exists('pages/' . $url . '.php')) {
             include('pages/' . $url . '.php');
         } else {
@@ -118,12 +179,12 @@
 
 
         ?>
-        <footer <?php if (isset($pagina404) && $pagina404 = true) echo 'class="fixed";' ?>>
     </div><!--container-principal-->
-    <div class="center">
+    <footer <?php if (isset($pagina404) && $pagina404 = true) echo 'class="fixed";' ?>>
+        <div class="center">
+            <p>Todos os direitos reservados</p>
 
-        <p>Todos os direitos reservados</p>
-    </div><!--center-->
+        </div><!--center-->
     </footer>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="<?php INCLUDE_PATH; ?>js/jquery-3.7.1.min.js"></script>
